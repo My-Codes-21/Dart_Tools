@@ -1,0 +1,51 @@
+open cmd as administrator
+
+
+bcdedit /enum firmware
+
+look for kali and copy first code like this
+
+bcdedit /delete {72638bb9-17c4-11ee-ab1d-806e6f6e6963}
+
+
+now open 
+
+diskpart
+
+list disk
+
+select disk 0
+
+list vol
+
+select vol 2 fat32
+
+assign any letter like
+
+assign LETTER=z:
+
+now exit
+
+then z: to enter in z drive
+
+dir
+
+cd EFI
+
+dir
+
+cd kali
+
+cd ..
+
+rmdir /s kali
+
+type Y when it ask are u sure
+
+
+
+
+
+
+
+

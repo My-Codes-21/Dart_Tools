@@ -1,0 +1,73 @@
+#pushing new code to github
+
+echo "# Python-practice" >> README.md
+git init
+git add .
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/My-Codes-21/Python-practice.git
+git push -u origin main 
+
+git remote add origin https://github.com/My-Codes-21/Python-practice.git
+git branch -M main
+git push -u origin main
+git push
+git commit
+git status
+
+#removing the remote
+
+git remote remove origin
+
+#changing from one place to another place
+
+ git commit -m "refactor: move TaskController, Task, Status, TaskService to main package
+
+Move these classes from the test directory to the main directory to fix
+project structure and ensure they're included in the compiled application."
+
+#to add user and email
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+# pull request
+
+git pull origin main
+
+git pull
+
+# forcely add init existing + new
+
+git push -u origin main --force
+
+# to push on others GitHub
+
+first remove all git from windows credentials
+
+then logout from old GitHub account from chrome or edge or firefox any browser u use
+then then remove GitHub account from IntelliJ and add new account in IntelliJ 
+ and type this commands one by one
+
+# Remove old Git history (disconnects project from old account)
+rm -rf .git
+
+# Reinitialize Git for this project
+git init
+
+# Add all files
+git add .
+
+# Commit once
+git commit -m "First commit from new account"
+
+# Add new repo URL (from your NEW GitHub account)
+git remote add origin https://github.com/NEWUSERNAME/new-repo.git
+
+# Push to new repo
+git branch -M main
+git push -u origin main
+
+
+

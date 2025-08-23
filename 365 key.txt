@@ -1,0 +1,5 @@
+irm https://get.activated.win | iex
+
+then press 2
+
+and press 1
